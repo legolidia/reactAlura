@@ -1,9 +1,13 @@
-import Banner from './componentes/Banner/banner';
+import Banner from './componentes/Banner';
+import TextLabel from './componentes/TextLabel';
 
 function App() {
   return (
     <div className="App">
-      <Banner/>
+      <Banner />
+      <TextLabel/>
+     
+
     </div>
   );
 }
