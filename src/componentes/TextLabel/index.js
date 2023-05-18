@@ -1,7 +1,7 @@
 import './txtLabel.css'
 
 const TextLabel = (props) => {
-    const modifiedPlaceholder = `{${props.placeholder}...`
+    const modifiedPlaceholder = `${props.placeholder}...`
     return (
         <div className="text-label">
         <p>
@@ -9,7 +9,7 @@ const TextLabel = (props) => {
                 {props.label}
             </label>
         </p>
-            <input placeholder={modifiedPlaceholder} type="text" name="name" />
+            <input required={props.required} placeholder={modifiedPlaceholder} type="text" name="name" />
             
         </div>
     )
