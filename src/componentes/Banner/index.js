@@ -1,6 +1,6 @@
 const Banner = () => {
     return(
-        <img src="/img/banner.png" alt="banner principal da página do Organo" className="banner" width="100%"></img>
+        <img src="/img/banner.jpeg" alt="banner principal da página do Organo" className="banner" width="100%"></img>
     )
 }
 
