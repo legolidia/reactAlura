@@ -1,10 +1,14 @@
-const TextLabel = () => {
+import './txtLabel.css'
+
+const TextLabel = (props) => {
     return (
         <div className="text-label">" 
            <label>
-            Name:
-                <input type="text" name="name" />
+                {props.label}
             </label>
+
+            <input placeholder={props.placeholder} type="text" name="name" />
+            
         </div>
     )
 }
