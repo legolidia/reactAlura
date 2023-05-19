@@ -7,7 +7,6 @@ import { useState } from 'react'
 const Forms = (props) => {
   const types = [
     'grass',
-    'bug',
     'fire',
     'water',
     'normal',

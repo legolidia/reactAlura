@@ -2,7 +2,7 @@ import './type.css'
 
 const Type = (props) => {
 return(
-  <section>
+  <section className='type'>
     <h3>{props.name}</h3>
   </section>
 
