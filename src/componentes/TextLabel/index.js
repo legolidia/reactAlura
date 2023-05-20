@@ -9,11 +9,9 @@ const TextLabel = (props) => {
 
     return (
         <div className="text-label">
-        <p>
            <label>
                 {props.label}
             </label>
-        </p>
             <input value={props.value} onChange={atTyped} required={props.required} placeholder={modifiedPlaceholder} type="text" name="name" />
             
         </div>

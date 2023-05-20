@@ -1,12 +1,18 @@
-.type{
-    text-align: center;
-    padding: 32px;
-    background-color: #D9F7E9;
+.type {
+  text-align: center;
+  padding: 32px;
 }
 
-.type h3{
+.type h3 {
   font-size: 32px;
-    border-bottom: 4px solid #57C278;
-    display: inline-block;
-    padding-bottom: 8px;
+  border-bottom: 4px solid;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.type .pokemons {
+  justify-content: space-around;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
 }

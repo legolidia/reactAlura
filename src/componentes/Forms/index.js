@@ -5,25 +5,7 @@ import Button from '../Button'
 import { useState } from 'react'
 
 const Forms = (props) => {
-  const types = [
-    'grass',
-    'fire',
-    'water',
-    'normal',
-    'fighting',
-    'flying',
-    'poison',
-    'ground',
-    'rock',
-    'electric',
-    'psychic',
-    'ice',
-    'ghost',
-    'dragon',
-    'dark',
-    'steel',
-    'fairy'
-  ]
+  const types = []
 
   const [name, setName] = useState('')
   const [img, setImg] = useState('')
@@ -56,13 +38,12 @@ const Forms = (props) => {
           atAlteration={value => setImg(value)} />
 
         <List
-          required={true}
-          label="Type"
-          itens={types}
+          label="Type:"
+          itens={props.types}
           value={type}
           atAlteration={value => setType(value)} />
-
-        <Button txt="Catch" />
+        <div className = "centerButton"> 
+        <Button txt="Catch" /> </div>
       </form>
     </section>
   )

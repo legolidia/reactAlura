@@ -5,91 +5,31 @@ import Type from './componentes/Type';
 
 function App() {
 
-  const types = [
+   const types = [
     {
     name:'grass',
-    primaryColor:'',
-    secondaryColor:''
+    primaryColor:'#57C278',
+    secondaryColor:'#d9f7e9'
   },
   {
     name:'fire',
-    primaryColor:'',
-    secondaryColor:''
+    primaryColor:'#FFBA05',
+    secondaryColor:'#FFEEDF'
   },
   {
     name:'water',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'normal',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'fighting',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'flying',
-    primaryColor:'',
-    secondaryColor:''
+    primaryColor:'#82CFFA',
+    secondaryColor:'#E8F8FF'
   },
   {
     name:'poison',
-    primaryColor:'',
-    secondaryColor:''
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
   },
   {
-    name:'ground',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'rock',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'electric',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'psychic',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'ice',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'ghost',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'dragon',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'dark',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:'steel',
-    primaryColor:'',
-    secondaryColor:''
-  },
-  {
-    name:    'fairy',
-    primaryColor:'',
-    secondaryColor:''
+    name:'fairy',
+    primaryColor:'#FAE',
+    secondaryColor:'#FAE2'
   }
 ] 
 
@@ -97,15 +37,19 @@ function App() {
 
   const atNewPokemon = (pokemon) => {
     console.log(pokemon)
-    setPokemons({...pokemons, pokemon})
+    setPokemons([...pokemons, pokemon])
   }
+
   return (
     <div className="App">
       <Banner />
-      <Forms atCreatedPokemon={pokemon => atNewPokemon(pokemon)}/>
-      <Type name="fire"/>
-      <Type name="water"/>
-      <Type name="grass"/>
+      <Forms types={types.map(type => type.name)} atCreatedPokemon={pokemon => atNewPokemon(pokemon)}/>
+      {types.map(type => <Type 
+      key={type.name} 
+      name={type.name} 
+      primaryColor={type.primaryColor} 
+      secondaryColor={type.secondaryColor} 
+      pokemons={pokemons.filter(pokemons => pokemons.type === type.name)}/>)}
     </div>
   );
 }
