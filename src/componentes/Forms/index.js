@@ -5,7 +5,7 @@ import Button from '../Button'
 import { useState } from 'react'
 
 const Forms = (props) => {
-  const types = []
+  //const types = []
 
   const [name, setName] = useState('')
   const [img, setImg] = useState('')
