@@ -30,13 +30,78 @@ function App() {
     name:'fairy',
     primaryColor:'#FAE',
     secondaryColor:'#FAE2'
-  }
+  },
+  {
+    name:'dark',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'electric',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'bug',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'flying',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'fighting',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'normal',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'ground',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'rock',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'ghost',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'psychic',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'ice',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+  {
+    name:'dragon',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+    {
+    name:'steel',
+    primaryColor:'#BAF',
+    secondaryColor:'#BAF3'
+  },
+
 ] 
 
   const [pokemons, setPokemons] = useState([])
 
   const atNewPokemon = (pokemon) => {
-    console.log(pokemon)
     setPokemons([...pokemons, pokemon])
   }
 

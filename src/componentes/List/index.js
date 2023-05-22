@@ -6,6 +6,7 @@ const List = (props) => {
       
         <label>{props.label}</label>
         <select onChange={event => props.atAlteration(event.target.value)} required={props.required} value={props.value}>  
+            <option value=" "> </option>
             {props.itens.map(item => {
               return <option key={item}> {item} </option>
             })}

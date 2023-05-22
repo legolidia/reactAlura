@@ -18,6 +18,9 @@ const Forms = (props) => {
       img,
       type
     })
+    setName('')
+    setImg('')
+    setType('')
   }
 
   return (
